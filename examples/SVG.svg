@@ -1,0 +1,53 @@
+<svg
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   width="210mm"
+   height="297mm"
+   viewBox="0 0 210 297"
+>
+    <defs>
+        <marker
+            style="overflow:visible"
+            id="ArrowStart"
+            orient="auto"
+        >
+            <path
+                transform="scale(0.8) translate(12.5,0)"
+                style="stroke:#000000;stroke-width:1pt;fill:#000000; "
+                d="M 0.0,0.0 L 5.0,-5.0 L -12.5,0.0 L 5.0,5.0 L 0.0,0.0 z "
+            />
+        </marker>
+    </defs>
+    <rect
+        style="fill:#0000ff;"
+        width="125"
+        height="92"
+        x="43"
+        y="190"
+    />
+    <ellipse
+        style="fill:none;stroke-width:1;stroke:#000000;"
+        cx="105"
+        cy="77"
+        rx="37"
+        ry="62"
+    />
+    <text
+        style="font-size:10px;"
+        x="80"
+        y="240"
+    >
+        <tspan x="80" y="240">centered text</tspan>
+    </text>
+    <path
+        style="stroke:#000000;stroke-width:0.7;marker-start:url(#ArrowStart)"
+        d="M 105,140 105,190"
+    />
+    <text
+        style="font-size:10px;"
+        x="107"
+        y="170"
+    >
+        <tspan x="107" y="170">arrow</tspan>
+    </text>
+</svg>

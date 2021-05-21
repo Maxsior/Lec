@@ -1,0 +1,12 @@
+e:
+    ellipse
+        stroke 1
+
+r:
+    rectangle
+        text "centered text"
+        fill "blue"
+
+arrow
+    direction r e
+    text "arrow"
