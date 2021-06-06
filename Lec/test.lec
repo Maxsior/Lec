@@ -1,0 +1,7 @@
+text "Test rectangles with text"
+
+rectangle
+    text "abc"
+    rectangle
+        text "def"
+    text "ghij"

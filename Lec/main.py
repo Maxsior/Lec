@@ -2,7 +2,7 @@ import sys
 from antlr4 import *
 from LecLexer import LecLexer
 from LecParser import LecParser
-
+from LecParserListener import LecParserListener
 
 def print_tree(tree, depth=0):
     indent = ' ' * depth * 4
@@ -25,15 +25,18 @@ def main(argv):
     parser = LecParser(stream)
     tree = parser.root()
 
-    print('*** Tokens ***')
-    for t in stream.tokens:
-        if t.channel != 1:
-            print(t)
+    extractor = LecParserListener()
+    ParseTreeWalker.DEFAULT.walk(extractor, tree)
 
-    print()
-
-    print('*** AST ***')
-    print_tree(tree)
+    # print('*** Tokens ***')
+    # for t in stream.tokens:
+    #     if t.channel != 1:
+    #         print(t)
+    #
+    # print()
+    #
+    # print('*** AST ***')
+    # print_tree(tree)
 
 
 if __name__ == '__main__':
